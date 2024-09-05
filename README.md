@@ -16,7 +16,7 @@ This repository contains many notebooks that explain how Azure AI Search works, 
     AZURE_COMPUTERVISION_SERVICE=YOUR-COMPUTERVISION-SERVICE-NAME
     ```
 
-3. Login to the Azure Developer CLI:
+3. Login to your Azure account using either the Azure CLI or the Azure Developer CLI:
 
     ```shell
     azd auth login
