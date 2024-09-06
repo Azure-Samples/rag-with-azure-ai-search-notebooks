@@ -6,7 +6,7 @@ This repository contains many notebooks that explain how Azure AI Search works, 
 
 1. Run `azd up` on [azure-search-openai-demo](https://github.com/Azure-Samples/azure-search-openai-demo/) with GPT-4-vision enabled. This will create the necessary resources for the Azure OpenAI, Azure AI Search services, and the Computer Vision service.
 
-2. Create a .env with these variables, and the values taken from `.azure/ENV-NAME/.env`
+2. Create a .env with these variables, with the values taken from `.azure/ENV-NAME/.env` in the azure-search-openai-demo repository.
 
     ```shell
     AZURE_OPENAI_SERVICE=YOUR-SERVICE-NAME
@@ -14,23 +14,18 @@ This repository contains many notebooks that explain how Azure AI Search works, 
     AZURE_OPENAI_ADA_DEPLOYMENT=YOUR-EMBED-DEPLOYMENT-NAME
     AZURE_SEARCH_SERVICE=YOUR-SEARCH-SERVICE-NAME
     AZURE_COMPUTERVISION_SERVICE=YOUR-COMPUTERVISION-SERVICE-NAME
+    AZURE_TENANT_ID=YOUR-TENANT-ID
     ```
 
-3. Login to your Azure account using either the Azure CLI or the Azure Developer CLI:
+3. Login to your Azure account using the Azure CLI. Specify `--tenant-id` if you deployed that repo to a non-default tenant.
 
     ```shell
     azd auth login
     ```
 
-4. If you deployed your resource group to a tenant other than your home tenant, set the tenant ID:
+4. Create a Python virtual environment or open the project in a container.
 
-    ```shell
-    export TENANT_ID=YOUR-TENANT-ID
-    ```
-
-5. Create a Python virtual environment or open the project in a container.
-
-6. Install the requirements:
+5. Install the requirements:
 
     ```shell
     pip install -r requirements.txt
