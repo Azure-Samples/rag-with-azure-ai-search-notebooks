@@ -4,7 +4,7 @@ This repository contains many notebooks that explain how Azure AI Search works, 
 
 ## Environment setup
 
-1. Run `azd up` on [azure-search-openai-demo](https://github.com/Azure-Samples/azure-search-openai-demo/) with GPT-4-vision enabled. This will create the necessary resources for the Azure OpenAI, Azure AI Search services, and the Computer Vision service.
+1. Run `azd up` on [azure-search-openai-demo](https://github.com/Azure-Samples/azure-search-openai-demo/) with GPT vision feature enabled. This will create the necessary resources for the Azure OpenAI, Azure AI Search services, and the Azure AI Vision service.
 
 2. Create a .env with these variables, with the values taken from `.azure/ENV-NAME/.env` in the azure-search-openai-demo repository.
 
